@@ -1,21 +1,33 @@
-function App() {
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Main from './layouts/Main';
+import Home from './pages/Home';
+
+const App = () => {
+  const routes = [
+    {
+      element: <Main />,
+      children: [
+        {
+          path: '/',
+          element: <Home />,
+        },
+      ],
+    },
+  ];
+
+  const routeConfig = {
+    basename: '/fe-mentor-6-calculator-app',
+  };
+
+  const router = createBrowserRouter(routes, routeConfig);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="
+    APP-CONTAINER"
+    >
+      <RouterProvider router={router} />
     </div>
   );
-}
+};
 
 export default App;
