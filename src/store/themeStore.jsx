@@ -42,7 +42,7 @@ const themeList = [
       key: 'text-VDGYellowText',
       secondaryKey: 'text-white',
       calculateKey: 'text-white',
-      general: 'text-white',
+      general: 'text-VDGYellowText',
     },
   },
   {
