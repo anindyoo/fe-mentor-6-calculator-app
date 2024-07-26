@@ -22,8 +22,10 @@ const App = () => {
   const router = createBrowserRouter(routes, routeConfig);
 
   return (
-    <div className="
-    APP-CONTAINER"
+    <div className={`
+    APP-CONTAINER
+    h-screen w-screen
+    `}
     >
       <RouterProvider router={router} />
     </div>
