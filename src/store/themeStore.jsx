@@ -11,10 +11,10 @@ const themeList = [
     keys: {
       primary: 'bg-DDBlueKey',
       primaryShadow: 'bg-DDBKeyShadow',
-      secondary: 'bg-RedKey',
-      secondaryShadow: 'bg-DRedKeyShadow',
-      tertiary: 'bg-LGOrangeKey',
-      tertiaryShadow: 'bg-GOrangKeyShadow',
+      secondary: 'bg-LGOrangeKey',
+      secondaryShadow: 'bg-GOrangKeyShadow',
+      tertiary: 'bg-RedKey',
+      tertiaryShadow: 'bg-DRedKeyShadow',
     },
     text: {
       key: 'text-VDGBlueText',
@@ -33,10 +33,10 @@ const themeList = [
     keys: {
       primary: 'bg-DMCyanKey',
       primaryShadow: 'bg-VDCyanKeyShadow',
-      secondary: 'bg-orangeKey',
-      secondaryShadow: 'bg-DOrangeKeyShadow',
-      tertiary: 'bg-LGYellowKey',
-      tertiaryShadow: 'bg-DGOrangeKeyShadow',
+      secondary: 'bg-LGYellowKey',
+      secondaryShadow: 'bg-DGOrangeKeyShadow',
+      tertiary: 'bg-orangeKey',
+      tertiaryShadow: 'bg-DOrangeKeyShadow',
     },
     text: {
       key: 'text-VDGYellowText',
@@ -55,10 +55,10 @@ const themeList = [
     keys: {
       primary: 'bg-DVioletKey',
       primaryShadow: 'bg-VMagentaKeyShadow',
-      secondary: 'bg-PCyanKey',
-      secondaryShadow: 'bg-SCyanKeyShadow',
-      tertiary: 'bg-VDVioletKey',
-      tertiaryShadow: 'bg-DMagentaKeyShadow',
+      secondary: 'bg-VDVioletKey',
+      secondaryShadow: 'bg-DMagentaKeyShadow',
+      tertiary: 'bg-PCyanKey',
+      tertiaryShadow: 'bg-SCyanKeyShadow',
     },
     text: {
       key: 'text-LYellowtext',
