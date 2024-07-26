@@ -33,7 +33,7 @@ module.exports = {
         // THEME 2
         // BACKGROUNDS
         LGrayMain: 'hsla(0, 0%, 90%, 1)',
-        GRedKeypad: 'hsla(0,, 1 ',
+        GRedKeypad: 'hsla(0, 5%, 81%, 1) ',
         VLGray: 'hsla(0, 0%, 93%, 1)',
         // KEYS
         DMCyanKey: 'hsla(185, 42%, 37%, 1)',
