@@ -9,11 +9,11 @@ const themeList = [
       screen: 'bg-VDDBlueScreen',
     },
     keys: {
-      primary: 'bg-LGOrangeKey',
+      primary: 'bg-LGOrangeKey hover:bg-GOrangKeyHover',
       primaryShadow: 'border-GOrangKeyShadow',
-      secondary: 'bg-DDBlueKey',
+      secondary: 'bg-DDBlueKey hover:bg-DDBKeyHover',
       secondaryShadow: 'border-DDBKeyShadow',
-      tertiary: 'bg-RedKey',
+      tertiary: 'bg-RedKey hover:bg-DRedKeyHover',
       tertiaryShadow: 'border-DRedKeyShadow',
     },
     text: {
@@ -31,11 +31,11 @@ const themeList = [
       screen: 'bg-VLGray',
     },
     keys: {
-      primary: 'bg-LGYellowKey',
+      primary: 'bg-LGYellowKey hover:bg-DGOrangeKeyHover',
       primaryShadow: 'border-DGOrangeKeyShadow',
-      secondary: 'bg-DMCyanKey',
+      secondary: 'bg-DMCyanKey hover:bg-VDCyanKeyHover',
       secondaryShadow: 'border-VDCyanKeyShadow',
-      tertiary: 'bg-orangeKey',
+      tertiary: 'bg-orangeKey hover:bg-DOrangeKeyHover',
       tertiaryShadow: 'border-DOrangeKeyShadow',
     },
     text: {
@@ -53,11 +53,11 @@ const themeList = [
       screen: 'bg-VDVioletKeypad',
     },
     keys: {
-      primary: 'bg-VDVioletKey',
+      primary: 'bg-VDVioletKey hover:bg-DMagentaKeyHover',
       primaryShadow: 'border-DMagentaKeyShadow',
-      secondary: 'bg-DVioletKey',
+      secondary: 'bg-DVioletKey hover:bg-VMagentaKeyHover',
       secondaryShadow: 'border-VMagentaKeyShadow',
-      tertiary: 'bg-PCyanKey',
+      tertiary: 'bg-PCyanKey hover:bg-SCyanKeyHover',
       tertiaryShadow: 'border-SCyanKeyShadow',
     },
     text: {
