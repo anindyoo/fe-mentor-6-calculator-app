@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import useThemeStore from '../../store/themeStore';
 
 const ThemeSwitch = () => {
