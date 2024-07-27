@@ -45,11 +45,11 @@ const ThemeSwitch = () => {
               absolute
               w-[1.125rem] h-[1.125rem] 
               rounded-full
-              transition-all duration-500
+              transition-transform ease-in-out duration-200
               ${activeTheme.keys.tertiary}
-              ${activeThemeId === 0 && 'left-[5px]'}
-              ${activeThemeId === 1 && 'left-[27px]'}
-              ${activeThemeId === 2 && 'left-[49px]'}`}
+              ${activeThemeId === 0 && 'translate-x-[5px]'}
+              ${activeThemeId === 1 && 'translate-x-[27px]'}
+              ${activeThemeId === 2 && 'translate-x-[49px]'}`}
             />
           </div>
         </button>
