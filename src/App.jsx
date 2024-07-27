@@ -31,6 +31,7 @@ const App = () => {
     APP-CONTAINER
     flex flex-col justify-center
     h-screen w-screen
+    transition-colors ease-in-out duration-300
     ${activeTheme.text.general}
     ${activeTheme.bg.page}`}
     >
