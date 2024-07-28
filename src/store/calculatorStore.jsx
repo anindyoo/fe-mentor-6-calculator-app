@@ -34,7 +34,7 @@ const useCalculatorStore = create((set) => ({
           break;
         case '+':
         case '/':
-        case 'x':
+        case '×':
           if (lastInput === '-' && !(/\d/.test(stateObject.equationDisplay.slice(-2)))) {
             break;
           } else {

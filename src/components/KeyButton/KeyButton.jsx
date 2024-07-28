@@ -49,7 +49,7 @@ const KeyButton = (props) => {
         : 'text-[2.5rem]/[1.25em]'
       }`}
       >
-        {keyButton}
+        {keyButton === '×' ? 'x' : keyButton}
       </div>
     </button>
   );
