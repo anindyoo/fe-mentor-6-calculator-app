@@ -1,3 +1,4 @@
+import useCalculatorStore from '../../store/calculatorStore';
 import useThemeStore from '../../store/themeStore';
 
 const KeyButton = (props) => {
@@ -12,10 +13,19 @@ const KeyButton = (props) => {
   const keysTheme = activeTheme.keys;
   const textTheme = activeTheme.text;
 
+  const {
+    setEquationInput,
+  } = useCalculatorStore();
+
+  const handleKeyClick = (e) => {
+    e.preventDefault();
+    setEquationInput(keyButton);
+  };
+
   return (
     <button
       type="button"
-      onClick={() => {}}
+      onClick={handleKeyClick}
       className={`
       KEY-BUTTON-COMPONENT
       h-16
