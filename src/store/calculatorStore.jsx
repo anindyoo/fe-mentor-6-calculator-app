@@ -22,6 +22,11 @@ const useCalculatorStore = create((set) => ({
           stateObject.alreadyOperator = isOperator(lastInput) ? false : stateObject.alreadyOperator;
           stateObject.alreadyDecimal = lastInput === '.' ? false : stateObject.alreadyDecimal;
           break;
+        case 'RESET':
+          stateObject.equationDisplay = '0';
+          stateObject.alreadyDecimal = false;
+          stateObject.alreadyOperator = false;
+          break;
         case '.':
           if (stateObject.alreadyDecimal === false) {
             const isNotaString = Number.isNaN(Number(lastInput));
