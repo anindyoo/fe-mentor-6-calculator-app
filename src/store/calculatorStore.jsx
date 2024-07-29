@@ -13,8 +13,15 @@ const useCalculatorStore = create((set) => ({
       };
 
       const lastInput = stateObject.equationDisplay.slice(-1);
+      const displayLength = stateObject.equationDisplay.length;
+      const isOperator = (x) => /[+\-×/]/.test(x);
 
       switch (input) {
+        case 'DEL':
+          stateObject.equationDisplay = stateObject.equationDisplay.substring(0, displayLength - 1);
+          stateObject.alreadyOperator = isOperator(lastInput) ? false : stateObject.alreadyOperator;
+          stateObject.alreadyDecimal = lastInput === '.' ? false : stateObject.alreadyDecimal;
+          break;
         case '.':
           if (stateObject.alreadyDecimal === false) {
             const isNotaString = Number.isNaN(Number(lastInput));
@@ -37,6 +44,8 @@ const useCalculatorStore = create((set) => ({
         case '×':
           if (lastInput === '-' && !(/\d/.test(stateObject.equationDisplay.slice(-2)))) {
             break;
+          } else if (isOperator(lastInput) === isOperator(input)) {
+            stateObject.equationDisplay = stateObject.equationDisplay.slice(0, -1) + input;
           } else {
             stateObject.equationDisplay = stateObject.alreadyOperator === false
               ? stateObject.equationDisplay + input
@@ -52,6 +61,8 @@ const useCalculatorStore = create((set) => ({
           stateObject.alreadyOperator = false;
           break;
       }
+      stateObject.equationDisplay = stateObject.equationDisplay === ''
+        ? '0' : stateObject.equationDisplay;
       return stateObject;
     });
   },
