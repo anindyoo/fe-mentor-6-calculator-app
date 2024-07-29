@@ -15,8 +15,18 @@ const useCalculatorStore = create((set) => ({
       const lastInput = stateObject.equationDisplay.slice(-1);
       const displayLength = stateObject.equationDisplay.length;
       const isOperator = (x) => /[+\-×/]/.test(x);
+      const filteredEquation = stateObject.equationDisplay.replaceAll('×', '*');
+      // eslint-disable-next-line no-eval
+      const evaluate = eval;
 
       switch (input) {
+        case '=':
+          if (!isOperator(lastInput)) {
+            stateObject.equationDisplay = evaluate(filteredEquation).toString();
+            stateObject.alreadyDecimal = stateObject.equationDisplay.includes('.');
+            stateObject.alreadyOperator = false;
+          }
+          break;
         case 'DEL':
           stateObject.equationDisplay = stateObject.equationDisplay.substring(0, displayLength - 1);
           stateObject.alreadyOperator = isOperator(lastInput) ? false : stateObject.alreadyOperator;
