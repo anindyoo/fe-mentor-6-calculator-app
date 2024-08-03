@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
 
 const themeList = [
   {
@@ -69,19 +70,26 @@ const themeList = [
   },
 ];
 
-const useThemeStore = create((set) => ({
-  activeThemeId: 0,
-  activeTheme: themeList[0],
-  setToggleTheme: () => {
-    set((state) => ({
-      activeThemeId: state.activeThemeId === 2
-        ? 0
-        : state.activeThemeId + 1,
-      activeTheme: state.activeThemeId === 2
-        ? themeList[0]
-        : themeList[state.activeThemeId + 1],
-    }));
-  },
-}));
+const useThemeStore = create(
+  persist(
+    (set) => ({
+      activeThemeId: 0,
+      activeTheme: themeList[0],
+      setToggleTheme: () => {
+        set((state) => ({
+          activeThemeId: state.activeThemeId === 2
+            ? 0
+            : state.activeThemeId + 1,
+          activeTheme: state.activeThemeId === 2
+            ? themeList[0]
+            : themeList[state.activeThemeId + 1],
+        }));
+      },
+    }),
+    {
+      name: 'calculator-theme-storage',
+    },
+  ),
+);
 
 export default useThemeStore;
