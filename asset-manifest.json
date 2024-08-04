@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fe-mentor-6-calculator-app/static/css/main.29f6bd90.css",
+    "main.js": "/fe-mentor-6-calculator-app/static/js/main.65a633a3.js",
+    "index.html": "/fe-mentor-6-calculator-app/index.html",
+    "main.29f6bd90.css.map": "/fe-mentor-6-calculator-app/static/css/main.29f6bd90.css.map",
+    "main.65a633a3.js.map": "/fe-mentor-6-calculator-app/static/js/main.65a633a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29f6bd90.css",
+    "static/js/main.65a633a3.js"
+  ]
+}
