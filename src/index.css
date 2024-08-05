@@ -8,5 +8,5 @@
 }
 
 .SECTION-CENTER {
-  @apply w-[33.75rem] mx-auto
+  @apply w-[96%] 2xs:w-[100%] 2xs:max-w-[20.438rem] sm:max-w-[33.75rem] mx-auto
 }

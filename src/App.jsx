@@ -29,7 +29,8 @@ const App = () => {
   return (
     <div className={`
     APP-CONTAINER
-    flex flex-col justify-center
+    flex flex-col lg:justify-center
+    pt-5 lg:pt-0    
     h-screen w-screen
     transition-colors ease-in-out duration-300
     ${activeTheme.text.general}

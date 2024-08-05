@@ -18,8 +18,8 @@ const Keypad = () => {
     <div className={`
     KEYPAD-COMPONENT
     SECTION-CENTER
-    grid grid-cols-4 gap-6
-    pl-[1.875rem] pr-8 py-8
+    grid grid-cols-4 gap-[0.813rem] lg:gap-6
+    p-6 lg:pl-[1.875rem] lg:pr-8 lg:py-8
     rounded-lg
     ${activeTheme.bg.keypad}`}
     >

@@ -13,9 +13,9 @@ const ThemeSwitch = () => {
     <div className="
     THEME-SWITCH-COMPONENT
     flex flex-row justify-end
-    gap-7"
+    gap-[1.625rem] lg:gap-7"
     >
-      <div className="THEME-LABEL mt-7 text-xs font-bold tracking-[0.08rem]">
+      <div className="THEME-LABEL mt-8 lg:mt-7 text-xs font-bold tracking-[0.08rem]">
         THEME
       </div>
       <div className="SWITCH-TOGGLER-AND-LABELS">
@@ -35,6 +35,7 @@ const ThemeSwitch = () => {
           className={`
           THEME-SWITCH
           w-[4.5rem] h-[1.625rem]
+          mt-[0.188rem] lg:mt-0
           rounded-full
           ${activeTheme.bg.keypad}`}
         >
