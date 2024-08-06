@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Frontend Mentor - Calculator app solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)  
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- See the size of the elements adjust based on their device's screen size
+- Perform mathmatical operations like addition, subtraction, multiplication, and division
+- Adjust the color theme based on their preference
+- **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
+ 
+#### Desktop
 
-### `npm run build`
+- Theme 1
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="./screenshots/theme1-desktop.jpeg" width="500">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Theme 2
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="./screenshots/theme2-desktop.jpeg" width="500">
 
-### `npm run eject`
+- Theme 3
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="./screenshots/theme3-desktop.jpeg" width="500">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Mobile
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Theme 1
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img src="./screenshots/theme1-mobile.jpeg" width="500">
 
-## Learn More
+- Theme 2
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="./screenshots/theme2-mobile.jpeg" width="500">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Theme 3
 
-### Code Splitting
+<img src="./screenshots/theme3-mobile.jpeg" width="500">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Solution URL: [Github](https://github.com/anindyoo/fe-mentor-6-calculator-app)
+- Live Site URL: [Github Pages](https://anindyoo.github.io/fe-mentor-6-calculator-app/)
 
-### Making a Progressive Web App
+## My process
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Built with
 
-### Advanced Configuration
+- Semantic HTML5 markup
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React](https://reactjs.org/) - JS library
+- [ESLint](https://eslint.org/) - Linting tool
+- [Zustand](https://zustand-demo.pmnd.rs/) - State management tool
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Frontend Mentor - [@anindyoo](https://www.frontendmentor.io/profile/anindyoo)
+- Twitter - [@anindyo_](https://www.twitter.com/anindyo_)
